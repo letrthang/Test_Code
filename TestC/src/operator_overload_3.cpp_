@@ -1,0 +1,40 @@
+// vectors: operator overload
+#include <iostream.h>
+
+class CVector {
+  public:
+    int x,y;
+    CVector () {};
+    CVector (int,int);
+    CVector add(CVector x, CVector y);
+  protected:
+    CVector operator+ (CVector); //co the xem operator+ nhu la mot ham thanh vien
+};
+
+CVector::CVector (int a, int b) {
+  x = a;
+  y = b;
+}
+
+CVector CVector::operator+ (CVector param) { //Toan tu qua tai + chi co tac dung 
+  CVector temp;                              //voi kieu du lieu la CVector
+  temp.x = x + param.x;
+  temp.y = y + param.y;
+  return (temp);
+}
+CVector CVector::add(CVector x, CVector y)
+{return x+y;};
+
+int main20()
+{
+  CVector a (3,1);
+  CVector b (1,2);
+  CVector c;
+  //c = a + b; // toan tu "+" bi protected nen ko the o ben ngoai ham thanh vien
+  c= c.add(a,b); // toan tu "+" luc nay chi duoc dung trong ham thanh vien
+  cout << c.x << "," << c.y <<endl;
+  cout << (2+3)<<endl; //thuc hien cong binh thuong voi kieu data khac CVector 
+  getchar();
+  return 0;
+}
+

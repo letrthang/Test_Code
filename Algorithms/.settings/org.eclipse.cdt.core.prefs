@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.exe.debug.239398777/MINGW_HOME/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.exe.debug.239398777/MINGW_HOME/operation=replace
+environment/project/cdt.managedbuild.config.gnu.exe.debug.239398777/MINGW_HOME/value=C\:\\mingw-w64\\i686-5.2.0-posix-dwarf-rt_v4-rev1\\mingw32
+environment/project/cdt.managedbuild.config.gnu.exe.debug.239398777/MSYS_HOME/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.exe.debug.239398777/MSYS_HOME/operation=replace
+environment/project/cdt.managedbuild.config.gnu.exe.debug.239398777/MSYS_HOME/value=C\:\\mingw-w64\\i686-5.2.0-posix-dwarf-rt_v4-rev1\\mingw32
+environment/project/cdt.managedbuild.config.gnu.exe.debug.239398777/append=true
+environment/project/cdt.managedbuild.config.gnu.exe.debug.239398777/appendContributed=true

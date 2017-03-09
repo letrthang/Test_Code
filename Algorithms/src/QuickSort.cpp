@@ -41,7 +41,7 @@ void quick_sort(int *x, int low, int high) {
 	}
 
 	// now we move the pivot to the position that all elements lesser than it
-	// is standing at its left side and else its right side is all elements bigger than it.
+	// will stand at its left side and its right side is all elements bigger than it.
 	if (low < up) {
 		temp = x[low];
 		x[low] = x[up];

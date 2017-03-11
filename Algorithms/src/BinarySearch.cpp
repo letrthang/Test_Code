@@ -47,13 +47,14 @@ using namespace std;
 	       return;  // you may also consider returning the subscript
 	}
 
-int main()
+int main_bs()
 {
 	// function call to the binary search function (listed below)
 	// for the array shown above
 	int num[] = {10, 15, 24, 36, 45, 55, 64, 73, 90, 98};
 
-	binarySearch(num, 0, 9, 64);
+	int n = sizeof num / sizeof num[0];
+	binarySearch(num, 0, n-1, 64);
 
 }
 

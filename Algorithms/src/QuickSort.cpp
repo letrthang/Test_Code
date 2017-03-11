@@ -2,7 +2,7 @@
  * ============================================================================
  * Name        : QuickSort.cpp
  * Author      : Thang Le
- * Version     : Mar, 2015
+ * Version     : 10 Mar 2017
  * Copyright   : www.letrungthang.blogspot.com
  * Description : quick sort implementation
  * ============================================================================
@@ -42,7 +42,7 @@ void quick_sort(int *x, int low, int high) {
 
 	// now we move the pivot to the position that all elements lesser than it
 	// will stand at its left side and its right side is all elements bigger than it.
-	if (low < up) {
+	if (x[low] > x[up]) {
 		temp = x[low];
 		x[low] = x[up];
 		x[up] = temp;
@@ -54,7 +54,7 @@ void quick_sort(int *x, int low, int high) {
 	quick_sort(x, up + 1, high);
 }
 
-int main_qs(){
+int main_qs() {
 
 	int a[] = { 4, 65, 2, -31, 0, 99, 2, 83, 782, 1 };
 	//int a[] = { 0, 2, 2, 2 };
@@ -70,7 +70,6 @@ int main_qs(){
 	for (int i = 0; i < n; i++) {
 		cout << a[i] << " ";
 	}
-	cout << "\n";
 
 	return 0;
 

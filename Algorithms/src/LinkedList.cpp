@@ -84,4 +84,6 @@ int main_ll()
 		cout << current->data <<" \n";
 		current = current->next;
 	}
+
+	return 0;
 }

@@ -22,7 +22,7 @@ list<Record> records ;
 map<int, list<int> > map_hit;
 map<string, int > map_t_hits; // 3 hits and count
 
-int main_most3()
+int main()
 {
 
 	Record r1, r2, r3, r4;

@@ -27,7 +27,7 @@ int binarySearchRecursive(int *array, int lowerbound, int upperbound, int key) {
 	}
 	return binarySearchRecursive(array, lowerbound, upperbound, key);
 }
-int main() {
+int main_bsr() {
 	// function call to the binary search function (listed below)
 	// for the array shown above
 	int num[] = { 10, 15, 24, 36, 45, 55, 64, 73, 90, 98 };

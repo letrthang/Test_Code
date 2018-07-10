@@ -33,21 +33,23 @@ using namespace std;
 				   lowerbound = position + 1;
 			 }
 			 position = (lowerbound + upperbound) / 2;
-	       }
+	       }// end while
+
 	      if (lowerbound <= upperbound)
 	      {
-			cout<< "The number was found in array subscript "<< position<<endl<<endl;
-			cout<< "The binary search found the number after " << comparisonCount
+			cout<< "The number was found in array subscript: "<< position<<endl<<endl;
+			cout<< "The binary search found the number after: " << comparisonCount
 				<< " comparisons.\n";
 			// printing the number of comparisons is optional
 	       }
 	       else
 			 cout<< "Sorry, the number is not in this array.  The binary search made "
 			 <<comparisonCount << " comparisons.";
+
 	       return;  // you may also consider returning the subscript
 	}
 
-int main_bs()
+int main()
 {
 	// function call to the binary search function (listed below)
 	// for the array shown above

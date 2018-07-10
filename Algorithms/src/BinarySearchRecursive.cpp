@@ -7,14 +7,19 @@
 #include <cstdlib>
 using namespace std;
 
+int comparisonCount = 0; //count the number of comparisons (optional)
+
 //Function accepts an array, the lower bound and upper bound subscripts...
 //to be searched, and the key number for which we are searching.
 //There is nothing returned.
 int binarySearchRecursive(int *array, int lowerbound, int upperbound, int key) {
 	int position;
+
+	comparisonCount++;
 	if (lowerbound > upperbound) {
 		return -1;
 	}
+
 	// To start, find the subscript of the middle position.
 	position = (lowerbound + upperbound) / 2;
 	if (array[position] > key)   // If the number is > key, ..
@@ -33,11 +38,12 @@ int main_bsr() {
 	int num[] = { 10, 15, 24, 36, 45, 55, 64, 73, 90, 98 };
 	int ret;
 	int n = sizeof num / sizeof num[0];
-	ret = binarySearchRecursive(num, 0, n - 1, 55);
+	ret = binarySearchRecursive(num, 0, n - 1, 64);
 	if (ret == -1) {
 		cout << "this element is not in given array" << endl;
 	} else {
-		cout << "found index = " << ret << endl;
+		cout << "found index = " << ret << " with number comparisonCount: "
+				<< comparisonCount << endl;
 	}
 
 }

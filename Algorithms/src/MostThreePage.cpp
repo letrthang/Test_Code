@@ -21,7 +21,7 @@ list<Record> records;
 map<int, list<int> > map_hit;
 map<string, int> map_t_hits; // 3 hits and count
 
-int main() {
+int main_mt() {
 
 	Record r1, r2, r3, r4;
 	r1.user_id = 1;
